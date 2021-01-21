@@ -3,7 +3,15 @@ public struct CodingChallenge_UniqueLetters {
     
     public func allUnique(input: String) -> Bool {
         // Your code here
-
-        return false
+        var dict = [Character: Bool]()
+        
+        for char in input {
+            if let _ = dict[char] {
+                return false
+            } else {
+                dict[char] = true
+            }
+        }
+        return true
     }
 }

@@ -10,8 +10,14 @@ final class CodingChallenge_UniqueLettersTests: XCTestCase {
     }
     func test1() {
         XCTAssertEqual(CodingChallenge_UniqueLetters().allUnique(input: "abc"), true)
+    }
+    func test2() {
         XCTAssertEqual(CodingChallenge_UniqueLetters().allUnique(input: "aAbBcC"), true)
+    }
+    func test3() {
         XCTAssertEqual(CodingChallenge_UniqueLetters().allUnique(input: "Hello World"), false)
+    }
+    func test4() {
         XCTAssertEqual(CodingChallenge_UniqueLetters().allUnique(input: "abcdefgABcDEGF"), false)
     }
 
